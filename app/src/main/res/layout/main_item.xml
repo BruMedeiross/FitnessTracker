@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <!-- wrap content envelopa o conteúdo -->
+
+        <LinearLayout
+            android:id="@+id/btn_imc"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:outlineAmbientShadowColor="@color/teal_200"
+            android:background="@color/design_default_color_primary"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:paddingStart="12dp"
+            android:paddingTop="18dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/item_img_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_wb_sunny_24" />
+
+                <TextView
+                    android:id="@+id/item_txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/label_imc"
+                    android:textSize="16sp"/>
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!-- primeiro trocou para o contraintlayout e apos
+     app:layout_constraintDimensionRatio="1:1"
+     determina como aparecerá na tela em quais dimensões, neste caso quadrada
+-->

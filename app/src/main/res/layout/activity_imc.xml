@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".ImcActivity">
+
+        <TextView
+            style="@style/TextViewFormat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imc_desc" />
+
+        <EditText
+            android:id="@+id/edit_imc_weight"
+            style="@style/EditTextForm"
+            android:hint="@string/weight" />
+
+        <EditText
+            android:id="@+id/edit_imc_height"
+            style="@style/EditTextForm"
+            android:hint="@string/height" />
+
+        <Button
+            android:id="@+id/btn_imc_send"
+            style="@style/ButtonForm"
+            android:text="@string/calc"/>
+    </LinearLayout>
+</ScrollView>
+
+<!-- filhos de scrol view precisa layout height em wrap content***
+    android:layout_height="wrap_content"
+
+     diferenca -layout gravity e gravity**
+
+     layout_gravity: é a gravidade do layour, neste caso o linear
+     gravity: se refe a gravidade dos componentes -
+     aos elementos que estao dentro do linear layout(seus filhos - textos e botoes)
+
+     style - padrão de estilo dos botoes
+     -->

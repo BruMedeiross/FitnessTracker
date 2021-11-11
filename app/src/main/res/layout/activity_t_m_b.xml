@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".ImcActivity">
+
+        <TextView
+            style="@style/TextViewFormat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tmb_desc" />
+
+        <EditText
+            android:id="@+id/edit_tmb_weight"
+            style="@style/EditTextForm"
+            android:hint="@string/weight" />
+
+        <EditText
+            android:id="@+id/edit_tmb_height"
+            style="@style/EditTextForm"
+            android:hint="@string/height" />
+        <EditText
+            android:id="@+id/edit_tmb_age"
+            style="@style/EditTextForm"
+            android:hint="@string/age" />
+
+        <Spinner
+            android:id="@+id/tmb_lifestyle"
+            style="@style/spinnerForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/tmb_lifestylle"/>
+        <Spinner
+            android:id="@+id/tmb_sexo"
+            style="@style/spinnerSexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/tmb_sexo"/>
+
+        <Button
+            android:id="@+id/btn_tmb_send"
+            style="@style/ButtonForm"
+            android:text="@string/calc"/>
+    </LinearLayout>
+</ScrollView>
