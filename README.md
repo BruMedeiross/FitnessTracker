@@ -7,6 +7,6 @@ CURSO ANDROID EXPRESS
   
    * linguagem: Java
    * ANDROID STUDIO
-   * DESCRIÇÃO: Trabalhando com: STYLES, SQLITE - BANCO DE DADOS INTERNO, LISTAS 
+   * DESCRIÇÃO: Trabalhando com STYLES, SQLITE - BANCO DE DADOS INTERNO, LISTAS 
    
    * [Saiba Mais Em:](#saibamaisem)   https://www.behance.net/brunaTI
